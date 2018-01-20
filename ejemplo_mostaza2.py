@@ -137,7 +137,7 @@ def cargar_charts():
     cur4.close()
     con.close()
     outfile4.close()
-    return jsonify("respuesta")
+    return jsonify("hola")
 
 
 @app.route('/_saludar')

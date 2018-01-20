@@ -1,7 +1,7 @@
 $(function (){
 
     setInterval(function(){
-        $.getJSON('/_cargar_charts', function(data) {
+        $.getJSON('/_saludar', function(data) {
        console.log(data);
       }) }, 3000);
 
