@@ -1,9 +1,9 @@
 from urllib import request
-"""import cx_Oracle
+import cx_Oracle
 import plotly.plotly as py
 import plotly.graph_objs as go
 import pandas as pd
-from plotly.graph_objs import *"""
+from plotly.graph_objs import *
 from flask import Flask, jsonify
 from flask import render_template
 
@@ -14,7 +14,7 @@ app = Flask(__name__)
 def index():
     return render_template('ejemplo.html')
 
-"""
+
 @app.route('/_cargar_charts')
 def cargar_charts():
     # archivos de texto con los resultados de las query
@@ -137,10 +137,8 @@ def cargar_charts():
     cur4.close()
     con.close()
     outfile4.close()
+    return jsonify("respuesta")
 
-    raw_input()
-    return jsonify("hola")
-"""
 
 @app.route('/_saludar')
 def saludar():
